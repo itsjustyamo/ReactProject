@@ -37,7 +37,7 @@
 //   );
 // };
 
-// export default Characters;
+
 import React, { useEffect, useState } from 'react';
 
 const Characters = () => {
