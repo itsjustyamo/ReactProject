@@ -1,11 +1,13 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer>
-      <p> © 2021 Walt Disney, Inc.</p>
-    </footer>
-
+    <Router>
+      <footer>
+        {/* Content of your Footer component */}
+      </footer>
+    </Router>
   );
 };
 
