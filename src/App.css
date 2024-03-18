@@ -1,38 +1,47 @@
+/* Rainbow whirlpool effect */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-image: url('./images/DISNEY.PNG');
-  background-size: cover; /* Ensures the background image covers the entire viewport */
-  display: flex;
-  flex-direction: column; /* Align content vertically */
-  min-height: 100vh; /* Ensures body takes at least the full height of the viewport */
-  max-width: 100%;
+  /* overflow: hidden; */ /* Remove this line */
+  /* position: fixed; */ /* Remove this line */
+  /* top: 0; */ /* Remove this line */
+  /* left: 0; */ /* Remove this line */
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+  z-index: -1;
 }
-
 
 /* Navbar styles */
 .navbar {
   background: linear-gradient(to bottom, #002244, #0055aa);
   color: white;
-  padding: 20px;
+  padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Footer styles */
 .footer {
   background: linear-gradient(to bottom, #002244, #0055aa);
   color: white;
-  padding: 20px;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* Container styles */
 .container {
-  max-width: 90%; /* Adjusted to a percentage for better responsiveness */
-  margin: 20px auto; /* Center the container */
+  max-width: 90%;
+  margin: 50px auto 20px;
+  padding: 0 20px;
 }
 
 /* Characters container styles */
@@ -67,6 +76,8 @@ body {
 /* Search filters styles */
 .search-filters {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
 .search-filters input {
@@ -75,6 +86,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
+  flex: 1; /* Take remaining space */
 }
 
 .search-filters button {
@@ -90,20 +102,3 @@ body {
 .search-filters button:hover {
   background-color: #003366;
 }
-
-.navbar {
-  margin-bottom: 20px;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-}
-
-.navbar-nav .nav-item {
-  margin-right: 10px;
-}
-
-.navbar-nav .nav-item:last-child {
-  margin-right: 0;
-}
-

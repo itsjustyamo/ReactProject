@@ -12,9 +12,9 @@ function App() {
   return (
     <div>
         <Navbar />
-        <ImageScrollbar />
-        <Characters />
         <SearchFilters />
+        <Characters />
+        <ImageScrollbar />
         <Footer /> 
         
     </div>

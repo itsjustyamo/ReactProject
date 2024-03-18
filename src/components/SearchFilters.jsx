@@ -1,6 +1,4 @@
-// SearchFilters.js
 import React, { useState } from 'react';
-
 const SearchFilters = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
