@@ -1,12 +1,109 @@
 body {
-  background-color: brown;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('./images/DISNEY.PNG');
+  background-size: cover; /* Ensures the background image covers the entire viewport */
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  min-height: 100vh; /* Ensures body takes at least the full height of the viewport */
+  max-width: 100%;
 }
 
-footer {
-  text-Align: center;
-  padding: 5px;
-  color: 'gray.600';
-  border-Top: 1px;
-  border-color: gray.100;
+
+/* Navbar styles */
+.navbar {
+  background: linear-gradient(to bottom, #002244, #0055aa);
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Footer styles */
+.footer {
+  background: linear-gradient(to bottom, #002244, #0055aa);
+  color: white;
+  padding: 20px;
+}
+
+/* Container styles */
+.container {
+  max-width: 90%; /* Adjusted to a percentage for better responsiveness */
+  margin: 20px auto; /* Center the container */
+}
+
+/* Characters container styles */
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Character card styles */
+.character-card {
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Image scrollbar styles */
+.image-scrollbar {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-scrollbar img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+/* Search filters styles */
+.search-filters {
+  margin-bottom: 20px;
+}
+
+.search-filters input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-filters button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0055aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-filters button:hover {
+  background-color: #003366;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
 }
 
