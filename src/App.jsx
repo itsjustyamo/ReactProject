@@ -7,6 +7,7 @@ import Characters from './components/Characters';
 import SearchFilters from './components/SearchFilters';
 import Footer from './components/Footer';
 import ImageScrollbar from './components/ImageScrollbar';
+// import CharacterDetail from '../pages/CharacterDetail';
 
 function App() {
   return (
@@ -22,5 +23,6 @@ function App() {
 };
 
 export default App;
+
 
 

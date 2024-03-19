@@ -11,11 +11,8 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">Home <span className="sr-only"></span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">About Characters</a>
-              </li>
+              <a className="nav-link" href="StayInTheKnow.jsx" target="_blank">Stay In The Know <span className="sr-only"></span></a>
+           </li>
           </ul>
         </div>
       </div>
@@ -24,6 +21,10 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+
+
+
 
 
 
