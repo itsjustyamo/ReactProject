@@ -7,7 +7,7 @@ import Characters from './components/Characters';
 import SearchFilters from './components/SearchFilters';
 import Footer from './components/Footer';
 import ImageScrollbar from './components/ImageScrollbar';
-// import CharacterDetail from '../pages/CharacterDetail';
+//import Character from '../pages/CharactersDetails'
 
 function App() {
   return (

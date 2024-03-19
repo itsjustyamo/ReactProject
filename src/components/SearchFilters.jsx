@@ -6,7 +6,6 @@ const SearchFilters = () => {
   const [error, setError] = useState(null);
 
   const handleSearch = () => {
-   
     fetch(`https://api.disneyapi.dev/character?name=${searchTerm}`)
       .then(response => {
         if (!response.ok) {
@@ -16,7 +15,6 @@ const SearchFilters = () => {
       })
       .then(data => {
         if (data && data.data && data.data.length > 0) {
-          
           setCharacter(data.data[0]);
           setError(null);
         } else {
@@ -32,19 +30,25 @@ const SearchFilters = () => {
   };
 
   return (
-    <div className="search-filters">
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="Search characters..."
-      />
-      <button onClick={handleSearch}>Search</button>
-    
+    <div>
+      <div>
+        <h3>Find your favorite Disney character below! Enter their name in the search bar and discover more about them</h3>
+        <p></p>
+      </div>
+      <div className="search-filters">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Search characters..."
+        />
+        <button onClick={handleSearch}>Search</button>
+      </div>
+
       <div className="character-details-container">
         {character && (
           <div className="character-details">
-              <hr/>
+            <br />
             <h2>{character.name}</h2>
             <img src={character.imageUrl} alt={character.name} />
             <p>{character.description}</p>
@@ -57,5 +61,3 @@ const SearchFilters = () => {
 }
 
 export default SearchFilters;
-
-

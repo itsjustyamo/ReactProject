@@ -26,7 +26,7 @@ const Characters = () => {
 
   return (
     <Container>
-      <h1 className="mt-5 mb-4">All Characters</h1>
+      <h1 className="mt-5 mb-4">More Disney Characters</h1>
       {error ? (
         <div className="error-message">{error}</div>
       ) : (
