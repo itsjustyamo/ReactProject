@@ -35,7 +35,7 @@ const CharacterDetail = () => {
   return (
     <div className="character-detail">
       <h1>{character.name}</h1>
-      <img src={character.imageUrl || 'placeholder.jpg'} alt={character.name} />
+      <img src={character.imageUrl || 'src/images/BUILDING.jpeg'} alt={character.name} />
     </div>
   );
 }

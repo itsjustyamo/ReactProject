@@ -32,7 +32,7 @@ const SearchFilters = () => {
   return (
     <div>
       <div>
-        <h3>Find your favorite Disney character below! Enter their name in the search bar and discover more about them</h3>
+        <h3>Find your favorite Disney character below! Enter their name in the search bar and see their picture</h3>
         <p></p>
       </div>
       <div className="search-filters">

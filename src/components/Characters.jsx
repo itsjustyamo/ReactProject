@@ -35,7 +35,7 @@ const Characters = () => {
             <Col key={index} sm={12} md={6} lg={4} xl={4}>
               <div className="character-card mb-4">
                 <div className="character-image">
-                  <img src={character.imageUrl || './/images/DISNEY.PNG'} alt={character.name} className="img-fluid" />
+                  <img src={character.imageUrl || './images/DISNEY.PNG'} alt={character.name} className="img-fluid" />
                 </div>
                 <h2>{character.name}</h2>
                 <p>{character.description}</p> 

@@ -3,10 +3,10 @@ import './App.css';
 
 // Import your components
 import Navbar from './components/Navbar';
-import Characters from './components/Characters';
+//import Characters from './components/Characters';
 import SearchFilters from './components/SearchFilters';
 import Footer from './components/Footer';
-import ImageScrollbar from './components/ImageScrollbar';
+import Characters from './components/Characters';
 //import Character from '../pages/CharactersDetails'
 
 function App() {
@@ -14,8 +14,7 @@ function App() {
     <div>
         <Navbar />
         <SearchFilters />
-        <Characters />
-        <ImageScrollbar />
+        <Characters/>
         <Footer /> 
         
     </div>
@@ -23,6 +22,3 @@ function App() {
 };
 
 export default App;
-
-
-
