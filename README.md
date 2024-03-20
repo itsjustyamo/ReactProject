@@ -9,7 +9,7 @@
 **Author:** Tshiamo Tsoku  
 **GitHub Repository:** [Find Your Favorite Dinner Character](https://github.com/itsjustyamo/ReactProject/tree/main)
 
-**Description:** This application aims to provide users with a fun and interactive way to explore Disney characters while discovering their favorite dinner recipes. Users can browse through a list of Disney characters, view their images and descriptions, and even find associated dinner recipes.
+**Description:** This application aims to provide users with a fun and interactive way to explore Disney characters while discovering their favorite dinner recipes. Users can browse through a list of Disney characters, view their images and descriptions.
 
 ## Technologies Used
 
